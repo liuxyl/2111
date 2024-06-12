@@ -1,0 +1,17 @@
+.username {
+  display: flex;
+  // 默认是内联元素
+  &::before {
+    content: ''; // 必须有
+    display: inline-block;
+    height: 10px;
+    border-right: 1px #f00 solid;
+    margin: 10px 10px 0 0;
+  }
+}
+:global body .adm-form-item.adm-form-item-horizontal .adm-list-item-content-prefix {
+  flex: 1;
+}
+:global body .adm-list-item-content-main {
+  flex: 4;
+}

@@ -1,0 +1,48 @@
+.q-image-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  .q-image {
+    width: 100px;
+    height: 125px;
+    position: relative;
+    overflow: hidden;
+
+    .title {
+      display: block;
+      text-align: center;
+      .xxx {
+        display: inline-block;
+        width: 40px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+
+    :global .x1 {
+      position: absolute;
+      right: 5px;
+      bottom: 4px;
+    }
+
+    .image {
+      border: 2px transparent solid;
+    }
+
+    .image2 {
+      border: 2px #F00 solid;
+    }
+
+    .num {
+      width: 20px;
+      height: 20px;
+      background-color: #F00;
+      border-radius: 20px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: #FFF;
+    }
+  }
+}

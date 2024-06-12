@@ -1,0 +1,40 @@
+@import './common.less';
+
+// :root 代表根元素
+// CSS全局变量
+:root {
+  --color: #DDD; 
+  --background-color: #0f0;
+  --xxx: #00f;
+  --hh: #000;
+}
+
+html, body,
+#root {
+  height: 100%;
+  // overflow: hidden;
+}
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  p, h1, h2, h3, h4, h5, h6, li {
+    margin: 0;
+    padding: 0;
+  }
+}

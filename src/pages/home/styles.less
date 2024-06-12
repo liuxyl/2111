@@ -1,0 +1,145 @@
+.tag {
+  display: flex;
+}
+.xxx {
+  font-size: 50px;
+}
+ul {
+  li {
+    width: 40%;
+    display: inline-block;
+    border: 2px #f00 solid;
+    margin: 10px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 600px){
+  ul {
+    li {
+      width: 20%;
+      display: inline-block;
+      border: 2px #000 solid;
+      margin: 10px;
+      height: 100px;
+    }
+  }
+}
+
+
+
+// import { useState } from "react";
+// import { Button } from "antd";
+
+// export default function Home(props) {
+//   // useState 全都是异步的
+//   const [x, setX] = useState(0);
+
+//   // 回调函数
+//   const [y, setY] = useState(() => {
+//     if (x > 1) {
+//       return "小花";
+//     } else {
+//       return "小蓝";
+//     }
+//   });
+//   const onClick = () => {
+//     // 不是立刻执行
+//     // 相同 useState 连续调用多次, 只有最后一次才会生效
+//     // 不同的 useState 连续调用多次, 把它们合并成一次执行
+//     setX(x + 1);
+//     setX(x + 1);
+//     setX(x + 1);
+//     setX(x + 1);
+//     setX(x + 1);
+//     setY(x + 1);
+
+//     // setX((pre) => {
+//     //   console.log(pre, 2);
+//     //   return pre;
+//     // });
+//     // console.log(x, 1);
+//   };
+//   console.log("我刷新了");
+//   return (
+//     <div id="box">
+//       <h1>x: {x}</h1>
+//       <h1>y: {y}</h1>
+
+//       <Button onClick={onClick}>点我</Button>
+//     </div>
+//   );
+// }
+
+// ---------
+// import { useState } from "react";
+// import { Button, DatePicker, Form, Input } from "antd";
+
+// export default function Home(props) {
+//   const time = 1715616000000;
+//   // 获取表单对象
+//   const [form] = Form.useForm();
+
+//   const onClick = () => {
+//     const { data } = form.getFieldsValue();
+//     console.log(data.valueOf(), 1);
+//   };
+
+//   const onClick2 = () => {
+//     form.validateFields({
+//       date: moment(time),
+//     });
+//     console.log(values, 3);
+//   };
+//   const config = {
+//     rules: [
+//       {
+//         type: "object",
+//         required: true,
+//         message: "xxx",
+//       },
+//     ],
+//   };
+
+//   return (
+//     <div>
+//       <Form
+//         labelCol={{ span: 4 }} //label的宽度
+//         wrapperCol={{ span: 8 }} //表单的宽度
+//         form={form}
+//       >
+//         <Form.Item name="date" label="日期" {...config}>
+//           <DatePicker />
+//         </Form.Item>
+
+//         {/* 表单域 一个表单只能套一个表单 */}
+//         <Form.Item
+//           name="username" //是提交给后台的字段
+//           label="姓名"
+//           rules={[{ required: true, message: "xxx" }]}
+//         >
+//           <Input />
+//         </Form.Item>
+
+//         <Form.Item
+//           name="password"
+//           label="密码"
+//           rules={[{ required: true, message: "xxx" }]}
+//         >
+//           <Input.Password />
+//         </Form.Item>
+
+//         <Form.Item>
+//           <Button type="primary" htmlType="submit">
+//             submit
+//           </Button>
+//         </Form.Item>
+
+//         <Form.Item>
+//           <Button type="primary" onClick={onClick2}>
+//             提交
+//           </Button>
+//         </Form.Item>
+//       </Form>
+//     </div>
+//   );
+// }

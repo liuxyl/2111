@@ -1,0 +1,55 @@
+
+
+.table-image {
+  position: relative;
+  .img1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+  }
+  .img2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+  }
+}
+.xxx {
+  position: relative;
+  .yu1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+  }
+  .yu2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+  }
+}
+.max-image {
+  // transform: scale(10);
+}
+.xxx {
+  display: flex;
+  justify-content: space-between;
+}
+
+:global html body #yyy {
+  .ant-tabs-tab {
+    border: 5px #000 solid;
+    display: block;
+  }
+  .ant-tabs-tab-btn {
+    width: 250px;
+    border: 2px #000 solid;
+  }
+}

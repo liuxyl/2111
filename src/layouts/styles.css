@@ -1,0 +1,7 @@
+.basic-layout {
+  display: flex;
+  height: 100%;
+}
+.box {
+  flex: 1;
+}
