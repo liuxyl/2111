@@ -12,7 +12,7 @@ const data = [
   }
 ]
 
-export default function Tables () {
+export default function Tables() {
   const ref = useRef(1)
   const [x, setX] = useState()
   const [data, setData] = useState([])
@@ -64,9 +64,9 @@ export default function Tables () {
       <Input onChange={onChange} />
       <Button>图片</Button>
       <Button onClick={onClick2}>icon</Button>
-      <Button onClick={() => onClick('text')}>发送</Button>
+      <Button onClick={() => onClick('text')}>发送1234324234</Button>
 
-      <div style={{display: x2 ? 'block' : 'none'}}>
+      <div style={{ display: x2 ? 'block' : 'none' }}>
         <Image
           preview={false}
           src="http://localhost:3000/src/pages/services/assets/Images/Expression/smilea_thumb.gif"
