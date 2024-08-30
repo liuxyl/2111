@@ -64,7 +64,8 @@ export default function Tables() {
       <Input onChange={onChange} />
       <Button>亚娟宝宝666</Button>
       <Button onClick={onClick2}>icon</Button>
-      <Button onClick={() => onClick('text')}>发送</Button>
+      <Button onClick={() => onClick('text')}>发送1234324234</Button>
+
       <div style={{ display: x2 ? 'block' : 'none' }}>
         <Image
           preview={false}
