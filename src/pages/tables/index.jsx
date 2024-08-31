@@ -62,6 +62,7 @@ export default function Tables() {
       </ul>
 
       <Input onChange={onChange} />
+      <Button>早上是练习</Button>
       <Button>565656</Button>
       <Button>王大龙999</Button>
       <Button>亚娟宝宝666</Button>
