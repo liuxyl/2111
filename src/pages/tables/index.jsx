@@ -63,6 +63,7 @@ export default function Tables() {
 
       <Input onChange={onChange} />
       <Button>王鑫龙教会了我</Button>
+      <Button>王鑫龙教会了叫亚娟宝宝</Button>
       <Button>早上是练习123</Button>
       <Button>565656</Button>
       <Button>王大龙999</Button>
