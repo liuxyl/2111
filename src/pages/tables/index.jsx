@@ -12,7 +12,7 @@ const data = [
   }
 ]
 
-export default function Tables () {
+export default function Tables() {
   const ref = useRef(1)
   const [x, setX] = useState()
   const [data, setData] = useState([])
@@ -62,11 +62,16 @@ export default function Tables () {
       </ul>
 
       <Input onChange={onChange} />
-      <Button>图片</Button>
+      <Button>王鑫龙教会了我</Button>
+      <Button>王鑫龙教会了叫亚娟宝宝</Button>
+      <Button>早上是练习123</Button>
+      <Button>565656</Button>
+      <Button>王大龙999</Button>
+      <Button>亚娟宝宝666</Button>
       <Button onClick={onClick2}>icon</Button>
-      <Button onClick={() => onClick('text')}>发送</Button>
+      <Button onClick={() => onClick('text')}>发送1234324234</Button>
 
-      <div style={{display: x2 ? 'block' : 'none'}}>
+      <div style={{ display: x2 ? 'block' : 'none' }}>
         <Image
           preview={false}
           src="http://localhost:3000/src/pages/services/assets/Images/Expression/smilea_thumb.gif"
